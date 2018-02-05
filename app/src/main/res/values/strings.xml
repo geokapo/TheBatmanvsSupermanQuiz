@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">The Batman vs Superman Quiz</string>
+    <string name="enter_your_name">Enter your name here</string>
+    <string name="button">button</string>
+    <string name="BatmanVsSuperman">Batman Vs Superman</string>
+    <string name="superman">Superman</string>
+    <string name="GothamAvenger">Gotham Avenger</string>
+    <string name="TheCapedCrusaderCorrect">The Caped Crusader  Correct</string>
+    <string name="BatBoy">BatBoy</string>
+    <string name="ManofSteel">Man of Steel</string>
+    <string name="SpeedingBullet">Speeding Bullet</string>
+    <string name="batman">Batman</string>
+    <string name="ZackSnyder">Zack Snyder</string>
+    <string name="DavidS.Goyer">David S. Goyer</string>
+    <string name="StevenSpielberg">Steven Spielberg </string>
+    <string name="Thestral">Thestral</string>
+    <string name="True">True</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="False">False</string>
+    <string name="q7">7. True or false: Batman v Superman: Dawn of Justice received an R rating.</string>
+    <string name="q6">6. Who is the director of Batman vs Superman:Dawn of Justice? </string>
+    <string name="q5">5. In the first year of this superhero\'s comic book, he killed 20 evil doers. </string>
+    <string name="q4">4. Did Superman or Batman first appear in Detective Comics No. 27?  </string>
+    <string name="q3">3. What is Superman\'s nickname?</string>
+    <string name="q2">2. What is Batman\'s nickname? </string>
+    <string name="q1">1. Which superhero came to Earth from the planet Krypton?</string>
+    <string name="you_have">you have</string>
+    <string name="correct_answers">correct answers</string>
+</resources>

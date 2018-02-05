@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <dimen name="headerTextSize">16sp</dimen>
+    <dimen name="questions">18sp</dimen>
+    <dimen name="right">20dp</dimen>
+    <dimen name="top">10dp</dimen>
+
+</resources>

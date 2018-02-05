@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/batman"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context="com.example.android.thebatmanvssupermanquiz.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/acme"
+            android:paddingTop="@dimen/top"
+            android:text="@string/BatmanVsSuperman"
+            android:textColor="@color/blue"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:fontFamily="@font/acme" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/headerTextSize"
+            android:hint="@string/enter_your_name"
+            android:inputType="textCapWords"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q1"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ManOfSteel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/batman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/superm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/superman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q2"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Gotham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+            android:text="@string/GothamAvenger"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Crusader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+            android:text="@string/TheCapedCrusaderCorrect"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Batboy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+            android:text="@string/BatBoy"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q3"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ManOfSteel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/ManofSteel"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Bullet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/SpeedingBullet"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:allowUndo="false"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q4"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Superman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/superman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Batman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/batman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q5"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Batman_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/batman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Superman_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/superman"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q6"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ZackSnyder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+                        android:text="@string/ZackSnyder"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Goyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+            android:text="@string/DavidS.Goyer"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Spielberg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#B71C1C"
+            android:fontFamily="@font/acme"
+            android:text="@string/StevenSpielberg"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:fontFamily="@font/acme"
+            android:padding="@dimen/right"
+            android:text="@string/q7"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/questions"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Istrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/True"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Isfalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#B71C1C"
+                android:fontFamily="@font/acme"
+                android:text="@string/False"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/acme"
+            android:onClick="submitAnswers"
+            android:text="@string/SUBMIT"
+            android:textColor="@color/buttonColor" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

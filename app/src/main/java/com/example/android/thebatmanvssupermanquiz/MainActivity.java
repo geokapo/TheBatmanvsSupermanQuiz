@@ -30,7 +30,15 @@ RadioButton seventh_questionAnswerSecond;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        first_questionAnswerTwo = (RadioButton) findViewById(R.id.superm);
+        second_questionAnswerTwo = (CheckBox) findViewById(R.id.Crusader);
+        third_questionAnswerOne = (RadioButton) findViewById(R.id.ManOfSteel_2);
+        fourth_questionAnswerOne = (RadioButton) findViewById(R.id.Superman);
+        fifth_questionAnswerOne = (RadioButton) findViewById(R.id.Batman_2);
+        sixth_questionAnswerOne = (CheckBox) findViewById(R.id.ZackSnyder);
+        seventh_questionAnswerSecond = (RadioButton) findViewById(R.id.Isfalse);
     }
+
     /**
      * This method is activated when the Submit answers button is pressed
      */
@@ -42,6 +50,7 @@ RadioButton seventh_questionAnswerSecond;
 
         if (first_questionAnswerTwo.isChecked()){
             totalPoints +=1;
+
         }
 
         if (second_questionAnswerTwo.isChecked()){

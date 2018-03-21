@@ -18,7 +18,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:fontFamily="@font/acme"
             android:paddingTop="@dimen/top"
@@ -29,15 +29,6 @@
             tools:fontFamily="@font/acme" />
 
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/headerTextSize"
-            android:hint="@string/enter_your_name"
-            android:inputType="textCapWords"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,30 +42,21 @@
             android:textSize="@dimen/questions"
             android:textStyle="bold" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/ManOfSteel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+            <EditText
+                android:id="@+id/Superm"
                 android:buttonTint="#B71C1C"
                 android:fontFamily="@font/acme"
-                android:text="@string/batman"
                 android:textColor="@color/blue"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/superm"
-                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="#B71C1C"
-                android:fontFamily="@font/acme"
-                android:text="@string/superman"
-                android:textColor="@color/blue"
-                android:textStyle="bold" />
-        </RadioGroup>
+                android:layout_marginBottom="@dimen/headerTextSize"
+                android:hint="@string/enter_your_name"
+                android:inputType="textCapWords" />
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -88,32 +70,32 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/Gotham"
+            android:id="@+id/Joker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#B71C1C"
             android:fontFamily="@font/acme"
-            android:text="@string/GothamAvenger"
+            android:text="@string/Joker"
             android:textColor="@color/blue"
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/Crusader"
+            android:id="@+id/Penguin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#B71C1C"
             android:fontFamily="@font/acme"
-            android:text="@string/TheCapedCrusaderCorrect"
+            android:text="@string/Penguin"
             android:textColor="@color/blue"
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/Batboy"
+            android:id="@+id/Robin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#B71C1C"
             android:fontFamily="@font/acme"
-            android:text="@string/BatBoy"
+            android:text="@string/Robin"
             android:textColor="@color/blue"
             android:textStyle="bold" />
 
@@ -240,8 +222,11 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/questions"
             android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <CheckBox
+        <RadioButton
             android:id="@+id/ZackSnyder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -251,7 +236,7 @@
             android:textColor="@color/blue"
             android:textStyle="bold" />
 
-        <CheckBox
+        <RadioButton
             android:id="@+id/Goyer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -261,7 +246,7 @@
             android:textColor="@color/blue"
             android:textStyle="bold" />
 
-        <CheckBox
+        <RadioButton
             android:id="@+id/Spielberg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -270,6 +255,7 @@
             android:text="@string/StevenSpielberg"
             android:textColor="@color/blue"
             android:textStyle="bold" />
+        </RadioGroup>
 
 
         <TextView

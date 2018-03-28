@@ -3,7 +3,6 @@ package com.example.android.thebatmanvssupermanquiz;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -13,9 +12,11 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
      int totalPoints;
+     int setResultFirst;
     EditText first_questionAnswerTwo;
     CheckBox second_questionAnswerTwo;
     CheckBox second_questionAnswerOne;
+    CheckBox second_questionAnswerThree;
     RadioButton third_questionAnswerOne;
     RadioButton fourth_questionAnswerOne;
     RadioButton fifth_questionAnswerOne;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         first_questionAnswerTwo = findViewById(R.id.Superm);
         second_questionAnswerTwo = findViewById(R.id.Penguin);
         second_questionAnswerOne = findViewById(R.id.Joker);
+        second_questionAnswerThree = findViewById(R.id.Robin);
         third_questionAnswerOne = findViewById(R.id.ManOfSteel_2);
         fourth_questionAnswerOne = findViewById(R.id.Superman);
         fifth_questionAnswerOne = findViewById(R.id.Batman_2);
@@ -39,41 +41,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     /**
      * This method is activated when the Submit answers button is pressed
      */
 
-    public void submitAnswers(View view) {
+    public int submitAnswers(View view) {
+
+        EditText setResult = findViewById(R.id.Superm);
+        setResultFirst= 0;
+        if(setResult.getText().toString().equals("Superman")) setResultFirst = 1;
+        else setResultFirst = 0;
 
 
-        if(first_questionAnswerTwo.equals("Superman")) {
+        if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked()))
             totalPoints += 1;
-        }
+        else if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked() && (second_questionAnswerThree.isChecked())))
+            totalPoints = 0;
 
-        if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked())){
-            totalPoints += 1;
-        }
+    else totalPoints = 0;
 
-        if (third_questionAnswerOne.isChecked()) {
-            totalPoints += 1;
-        }
+        if (third_questionAnswerOne.isChecked()) totalPoints += 1;
 
-        if (fourth_questionAnswerOne.isChecked()) {
-            totalPoints += 1;
-        }
+        if (fourth_questionAnswerOne.isChecked()) totalPoints += 1;
 
-        if (fifth_questionAnswerOne.isChecked()) {
-            totalPoints += 1;
-        }
+        if (fifth_questionAnswerOne.isChecked()) totalPoints += 1;
 
-        if (sixth_questionAnswerOne.isChecked()) {
-            totalPoints += 1;
-        }
+        if (sixth_questionAnswerOne.isChecked()) totalPoints += 1;
 
-        if (seventh_questionAnswerSecond.isChecked()) {
-            totalPoints += 1;
-        }
+        if (seventh_questionAnswerSecond.isChecked()) totalPoints += 1;
 
 
         //** * This method create results message*/
@@ -94,27 +89,18 @@ public class MainActivity extends AppCompatActivity {
         String High = String.format(highPoints, totalPoints);
 
 
-        if(totalPoints == 0) {
 
-            Toast.makeText(this, Zero, Toast.LENGTH_LONG).show();
-
-        } else if(totalPoints == 1 || totalPoints == 2) {
-
+        if(totalPoints == 0) Toast.makeText(this, Zero, Toast.LENGTH_LONG).show();
+        else if(totalPoints == 1 || totalPoints == 2)
             Toast.makeText(this, Less, Toast.LENGTH_LONG).show();
-
-        } else if(totalPoints == 3 || totalPoints == 4) {
-
+        else if(totalPoints == 3 || totalPoints == 4)
             Toast.makeText(this, Medium, Toast.LENGTH_LONG).show();
-
-        } else if(totalPoints == 5 || totalPoints == 6) {
-
+        else if(totalPoints == 5 || totalPoints == 6)
             Toast.makeText(this, High, Toast.LENGTH_LONG).show();
-
-        }
 
 
         Context context = getApplicationContext();
-        CharSequence text = "Hey " + "! \nYou got " + totalPoints + " points";
+        CharSequence text = "You got " + totalPoints + " points";
         text = text + "\n" + getString(R.string.you_have) + " " + totalPoints + " " + getString(R.string.correct_answers);
         int duration = Toast.LENGTH_LONG;
 
@@ -123,15 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    return totalPoints =0;
     }
 
 }
-
-
-
-
-
-
-
-
-

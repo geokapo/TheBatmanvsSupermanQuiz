@@ -70,10 +70,7 @@ public class MainActivity extends AppCompatActivity {
         if (seventh_questionAnswerSecond.isChecked()) totalPoints += 1;
 
 
-
         //** * This method create results message*/
-
-
 
         Context context = getApplicationContext();
         CharSequence text = "You got " + totalPoints + setResultFirst+ " points";
@@ -83,10 +80,8 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
 
-
-         (setResultFirst = 0) {
-        }
-    return totalPoints =0;
+        setResultFirst = 0;
+        return totalPoints =0;
     }
 
 }

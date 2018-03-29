@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/headerTextSize"
                 android:hint="@string/enter_your_name"
-                android:inputType="textCapWords" />
+                android:inputType="textCapWords"/>
 
 
 

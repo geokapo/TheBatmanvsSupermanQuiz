@@ -30,4 +30,6 @@
     <string name="toast1">Come on! You only got %1$d correct. </string>
     <string name="toast2">Not that bad! You are almost there! </string>
     <string name="toast3">You got %1$d correct answers! You are a real fan! </string>
+    <string name="toast4">Your answer is correct! It\'s Superman!</string>
+    <string name="toast5">Your answer is wrong! Try again.</string>
 </resources>

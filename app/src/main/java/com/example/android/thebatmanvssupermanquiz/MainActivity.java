@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
 
 
-        switch (setResultFirst = 0) {
+         (setResultFirst = 0) {
         }
     return totalPoints =0;
     }

@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         sixth_questionAnswerOne = findViewById(R.id.ZackSnyder);
         seventh_questionAnswerSecond = findViewById(R.id.Isfalse);
     }
-    
     /**
      * This method is activated when the Submit answers button is pressed
      */

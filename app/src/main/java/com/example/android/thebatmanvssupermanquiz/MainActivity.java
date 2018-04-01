@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
      int totalPoints;
-     int setResultFirst;
     EditText first_questionAnswerTwo;
     CheckBox second_questionAnswerTwo;
     CheckBox second_questionAnswerOne;
@@ -48,17 +47,9 @@ public class MainActivity extends AppCompatActivity {
     public int submitAnswers(View view) {
 
         EditText setResult = findViewById(R.id.Superm);
-        if(setResult.getText().toString().trim().equals("Superman")) setResultFirst += 1;
-        else setResultFirst = 0;
-
-
-        if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked()))
-            totalPoints += 1;
-        else if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked() && (second_questionAnswerThree.isChecked())))
-            totalPoints = 0;
-
-    else totalPoints = 0;
-
+        if(setResult.getText().toString().trim().equals("Superman")) totalPoints += 1;
+        if (second_questionAnswerOne.isChecked() && (second_questionAnswerTwo.isChecked()&& !second_questionAnswerThree.isChecked()))
+        totalPoints += 1;
         if (third_questionAnswerOne.isChecked()) totalPoints += 1;
 
         if (fourth_questionAnswerOne.isChecked()) totalPoints += 1;
@@ -72,15 +63,43 @@ public class MainActivity extends AppCompatActivity {
 
         //** * This method create results message*/
 
+        String Zero =  getResources().getString(R.string.toast0);
+
+        String lessPoints =  getResources().getString(R.string.toast1);
+
+        String Less = String.format(lessPoints, totalPoints);
+
+        String mediumPoints = getResources().getString(R.string.toast2);
+
+        String Medium = String.format(mediumPoints, totalPoints);
+
+        String highPoints =  getResources().getString(R.string.toast3);
+
+        String High = String.format(highPoints, totalPoints);
+
+        String HigherPoints = getResources().getString(R.string.toast4);
+
+        String Higher = String.format(HigherPoints, totalPoints);
+
+
+
+        if(totalPoints == 0) Toast.makeText(this, Zero, Toast.LENGTH_LONG).show();
+        else if(totalPoints == 1 || totalPoints == 2)
+            Toast.makeText(this, Less, Toast.LENGTH_LONG).show();
+        else if(totalPoints == 3 || totalPoints == 4)
+            Toast.makeText(this, Medium, Toast.LENGTH_LONG).show();
+        else if(totalPoints == 5 || totalPoints == 6)
+            Toast.makeText(this, High, Toast.LENGTH_LONG).show();
+        else if(totalPoints ==7 )
+            Toast.makeText(this, Higher, Toast.LENGTH_LONG).show();
+
         Context context = getApplicationContext();
-        CharSequence text = "You got " + totalPoints + setResultFirst+ " points";
-        text = text + "\n" + getString(R.string.you_have) + " " + totalPoints + setResultFirst+ " " + getString(R.string.correct_answers);
+        CharSequence text = "You got " + totalPoints +  " points";
+        text = text + "\n" + getString(R.string.you_have) + " " + totalPoints + " " + getString(R.string.correct_answers);
         int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
-        setResultFirst = 0;
         return totalPoints =0;
     }
 
